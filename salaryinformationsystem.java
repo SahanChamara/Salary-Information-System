@@ -1,7 +1,7 @@
 import java.util.*;
 import java.text.DecimalFormat;
 
-class coursework {
+class salaryinformationsystem {
 	public static void main(String args[]) {
 
 		Scanner input = new Scanner(System.in);
