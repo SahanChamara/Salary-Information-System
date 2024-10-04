@@ -117,7 +117,55 @@ class salaryinformationsystem{
 				tax += salary + msal1 + msal2 + msal3 + msal4 + msal5;
 				System.out.println("\t\t\tYou have to pay Income tax per month: "+Math.round(tax));
 			}		
-		}							
+		}
+		if (a==2){
+			System.out.println("\t\t\t------------------------------------------------------------------------");
+			System.out.println("\t\t\t| \t\t\tCalculate Annual Bonus                         |");
+			System.out.println("\t\t\t------------------------------------------------------------------------");
+			
+			
+			System.out.println();
+			
+			System.out.print("\t\t\tInput Employee Name\t- ");
+			String name = input.nextLine();
+			
+			input.nextLine();
+			
+			System.out.print("\t\t\tInput Employee Salary\t- ");
+			double salary = input.nextDouble();
+			
+			System.out.println();
+			
+			
+			double bonus;
+			
+			if (salary<100000){
+				
+				bonus = salary+5000;
+				
+			} else if (salary<=199999){
+				
+				bonus = salary*0.10;
+				
+			} else if (salary<=299999){
+				
+				bonus = salary*0.15;
+			
+			} else if (salary<=399999){
+				
+				bonus = salary * 0.20;
+			
+			} else {
+				
+				bonus = salary * 0.35;
+				
+			}			
+			
+			System.out.print("\t\t\tAnnual Bonus\t - "+decor.format(bonus));		
+			
+		}
+		
+							
 	}
 }
 			
